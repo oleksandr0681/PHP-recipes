@@ -1,0 +1,460 @@
+/* Универсальный селектор, который соответствует любому элементу 
+веб-страницы. Устанавливает одновременно один стиль для всех элементов 
+веб-страницы. */
+* {
+    padding:0; 
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1 {
+    text-align: center;
+    color: #555555;
+}
+
+h2 {
+    margin: 20px 0;
+    text-align: center;
+    color: #555555;
+    font-size: 30pt;
+}
+
+h3 {
+    text-align: center;
+    color: #555555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 50pt;
+}
+
+form label {
+    margin: 5pt 0;
+}
+
+form button {
+    width: auto;
+    padding: 5pt 10pt;
+    margin: 5pt 0;
+}
+
+.header {
+
+}
+
+.recipesContainer {
+    margin: 0 auto;
+    max-width: 1250px;
+}
+
+.headerBox {
+
+}
+
+.menu {
+    display: flex;
+    padding: 25px  0;
+}
+
+.menu__item {
+    margin-right: 30px;
+    color: #999999;
+    text-decoration: none;
+    font-size: 11pt;
+}
+
+.hero {
+
+}
+
+.heroBlock {
+
+}
+
+.delimiter {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.heroBlock__recipes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .heroBlock__recipe {
+    width: 620px;
+    height: 460px;
+    position: relative;
+} */
+
+.heroRecipe {
+    width: 620px;
+    height: 460px;
+    position: relative;
+}
+
+.heroRecipe a img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.heroRecipe__above {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.heroRecipe__above div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14pt;
+}
+
+.heroRecipe__above h2 {
+    color: white;
+}
+
+.heroRecipe__above div img {
+    width: 145px;
+    height: 29px;
+    margin-top: 25px;
+}
+
+.main {
+
+}
+
+.mainBox {
+
+}
+
+.mainBox__menu {
+    margin: 30px auto;
+    min-height: 40px;
+    max-width: 470px;
+    background-color: #eeeeee;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainBox__menuItem {
+    color: #555555;
+    text-decoration: none;
+    font-size: 11pt;
+    height: 40px;
+    padding: 12px 30px;
+    border-radius: 20px;
+}
+
+.mainBox__menuItem:hover {
+    color: #ffffff;
+    background-color: #223333;
+}
+
+.mainBox__menuItem_active {
+    color: #ffffff;
+    background-color: #223333;
+}
+
+.recipes {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 620px;
+    height: 310px;
+    border: 1pt solid #eeeeee;
+    margin: 10pt 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card__picture {
+    width: 308px;
+    height: 308px;
+    position: relative;
+}
+
+.card__picture a img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.card__pictureAbove {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+.card__pictureAbove div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #bbbbbb;
+    font-size: 14pt;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.card__pictureAbove div img {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.card__text {
+    width: 308px;
+}
+
+.card__title {
+    margin: 10px;
+    height: 70px;
+    overflow: hidden;
+}
+
+.card__attributes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.card__attr {
+    padding: 5px;
+    color: #bb9955;
+    border: 1pt solid #eeeeee;
+    border-radius: 10px;
+}
+
+.card__excerpt {
+    padding: 20px 10px;
+    overflow: hidden;
+    color: #555555;
+    height: 140px;
+}
+
+.card__textFooter {
+    border-top: 1pt solid #eeeeee;
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__like {
+    color: #999999;
+}
+
+.card__social {
+
+}
+
+.card__social a img {
+    margin-left: 20px;
+}
+
+.hot {
+
+}
+
+.hotBox {
+
+}
+
+.hotRecipes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.hotRecipe {
+    width: 305px;
+    height: 490px;
+    position: relative;
+}
+
+.hotRecipe a img {
+    width: 100%;
+    height: 100%;
+}
+
+.hotRecipeAbove {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+}
+
+.hotRecipeAbove h2 {
+    color:  white;
+    margin: 50px 10px;
+}
+
+.hotRecipes__recipe {
+    width: 305px;
+    height: 490px;
+    position: relative;
+}
+
+.footer {
+    background-color: #222222;
+}
+
+.footerBox {
+
+}
+
+.single {
+    
+}
+
+.singleHeader {
+    height: 640px;
+    border: 1pt solid #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.singleHeader__picture {
+    width: 630px;
+    height: 640px;
+}
+
+.singleHeader__text {
+    margin-left: 50px;
+}
+
+.singleHeader__title {
+    margin: 10px;
+    height: 150px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.singleHeader__attributes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 30px;
+}
+
+.singleHeader__attr {
+    padding: 5px;
+    color: #bb9955;
+    border: 1pt solid #eeeeee;
+    border-radius: 10px;
+}
+
+.singleHeader__excerpt {
+    padding: 20px 10px;
+    overflow: auto;
+    color: #555555;
+    height: 200px;
+    font-size: 20pt;
+    line-height: 1.0;
+}
+
+.singleHeader__author {
+    color: #999999;
+    font-size: 32pt;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.singleHeader__author img {
+    width: 75px;
+    height: 75px;
+    border-radius: 37px;
+}
+
+.singleHeader__author span {
+    margin-left: 20pt;
+}
+
+.singleHeader__bottom {
+    height: 40px;
+    padding: 25px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.singleHeader__like {
+    color: #999999;
+}
+
+.singleHeader__social {
+
+}
+
+.singleHeader__social a img {
+    margin-left: 20px;
+}
+
+.singleHeader__thumbnails {
+    height: 100px;
+    overflow: auto;
+}
+
+.singleHeader__thumbnails img {
+    width: 70px;
+    height: 70px;
+    margin-right: 5px;
+}
+
+.singleMain {
+    margin: 30px 0;
+    color: #555555;
+    font-size: 20pt;
+    line-height: 1.5;
+}
